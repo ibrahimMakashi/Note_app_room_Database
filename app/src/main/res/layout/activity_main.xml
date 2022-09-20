@@ -8,8 +8,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="398dp"
-        android:layout_height="51dp"
+        android:layout_width="396dp"
+        android:layout_height="61dp"
         android:layout_margin="10dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dp"
@@ -23,7 +23,7 @@
         <EditText
             android:id="@+id/input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="48dp"
             android:layout_margin="5dp"
             android:background="@color/white"
             android:ems="10"
@@ -38,9 +38,10 @@
     <Button
         android:id="@+id/addButton"
         android:layout_width="147dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_margin="20dp"
         android:elevation="20dp"
+        android:onClick="submitData"
         android:text="Button"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,8 +49,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.0"
-        android:onClick="submitData"/>
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
